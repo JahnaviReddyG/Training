@@ -16,12 +16,13 @@ console.log(`${person.name} is ${person.age + 1} and lives in ${person.location}
 let values = {
     farenhite: 32
 }
-let convertion = function(farenhit)
+let convertion = function(numbers)
 {
     return
     {
-        celcius: (`$(farenhit.farenhite)` -32) * (5/9)
+    
+        celcius: `${numbers.farenhite}`
     }
 }
-let returncelcius = convertion(values)
-console.log(returncelcius)
+let returnCelcius = convertion(values)
+console.log(returnCelcius.celcius)
