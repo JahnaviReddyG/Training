@@ -1,4 +1,4 @@
-//const notes = ['Note 1','Note 2','Note 3']
+  //const notes = ['Note 1','Note 2','Note 3']
 //notes.push("note 4")
 //console.log(notes.shift())
 //notes.unshift('Note 1')
@@ -15,7 +15,7 @@
     console.log("hello")
 }*/
 //array of objects
-const notes =[{
+/*const notes =[{
     title: 'my next trip',
     body: 'I am going to australia'
 },{
@@ -26,7 +26,12 @@ const notes =[{
      title: "office modification",
      body: "get a new seat"
 }]
-const findNote = function(notes,noteTitle)
+const filterNote = notes.filter(function(note,index){
+    const isTitleMAtch = notes.title.toLowerCase().includes('my')
+    return true
+})
+console.log(filterNote)
+/*const findNote = function(notes,noteTitle)
 {
 const index = notes.findIndex(function(note,index){
     return note.title === noteTitle
@@ -35,6 +40,7 @@ return notes[index]
 }
  const note = findNote(notes,"office modification")
 console.log(note)
+*/
 //if it finds first then it will end there 
 /*console.log(notes.indexOf({}))
 const index = notes.findIndex(function(note,index){
@@ -42,3 +48,9 @@ const index = notes.findIndex(function(note,index){
     return note.title === 'hobbits to work om'
 })
 console.log(index)*/
+console.log('a' < 'A')
+const sortNotes = function(notes) {
+    notes.sort(function(a,b){
+      
+    })
+}
