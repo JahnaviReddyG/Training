@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<p id="demoone"></p>
+<p id="demotwo"></p>
+<p id="demothree"></p>
+<p id="demof"></p>
+<p id="demofive"></p>
+<p id="demosix"></p>
+<input type="button" value="load" onclick="myfunc()"/>
+<script>
+document.getElementById("demo").innerHTML = screen.width;
+document.getElementById("demoone").innerHTML = screen.height;
+document.getElementById("demotwo").innerHTML=screen.availWidth;
+document.getElementById("demothree").innerHTML=screen.availHeight;
+document.getElementById("demof").innerHTML=location.href;
+document.getElementById("demofive").innerHTML=location.protocol;
+document.getElementById("demosix").innerHTML=navigator.userAgent;/* navigator.appVersion;*//*navigator.appCodeName*/;/*navigator.appName;*/ /*navigator.cookieEnabled; */ /*location.port*/
+function myfunc() {
+  window.location.assign("https://www.w3schools.com");
+}
+</script>
+
+</body>
+</html>

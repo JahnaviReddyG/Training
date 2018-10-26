@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="button" value="enter" onclick="myfunc()"/>
+<button onclick="myfuncs()">confirm</button>
+<p id="demo"></p>
+<script>
+function myfunc() {
+alert("hello");
+}
+function myfuncs() {
+var txt="";
+if(confirm("press a button!!!")){
+   txt="pressed ok";
+}
+else
+{
+txt = "pressed cancel";
+}
+document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
