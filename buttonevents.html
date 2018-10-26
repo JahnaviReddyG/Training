@@ -1,0 +1,42 @@
+<html>
+<body>
+<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
+<button id="btn">try it</button>
+<button id="myBtn">Try it</button>
+<button id="myBtns">Try it</button>
+<p id="demo"></p>
+<p id="demoone"></p>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+<script>
+document.getElementById("btn").onclick= hello;
+function hello()
+{
+document.getElementById("demo").innerHTML = "hello world";
+}
+function mOver(obj)
+{
+obj.innerHTML = "thankyou";
+}
+function mOut(obj)
+{
+obj.innerHTML ="MouseOver me";
+}
+document.getElementById("myBtn").addEventListener('click',hi);
+function hi()
+{
+document.getElementById("demo").innerHTML = "helloworld";
+}
+var p1=20;
+var p2=10;
+document.getElementById("myBtns").addEventListener('click',function() {
+myFunction(p1,p2);
+});
+function myFunction(a,b) {
+var result = a*b;
+document.getElementById("demoone").innerHTML = result;
+}
+</script>
+</body>
+</html>

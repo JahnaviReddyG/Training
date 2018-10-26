@@ -1,0 +1,17 @@
+<html>
+<body>
+<p id="demo"></p>
+<p id="demoone">hello world</p>
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.querySelectorAll("p");
+document.getElementById("demo").innerHTML =  x[1].innerHTML;
+document.getElementById("demo").style.color = "red";
+document.write(Date());
+</script>
+</body>
+</html>
