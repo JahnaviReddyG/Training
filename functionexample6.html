@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Setting a default value to a function parameter.</p>
+<p id="demo"></p>
+
+<script>
+var myObject = {wishes: function(){return this.a+this.b}};
+var wishone = {a: "hello",b: "hi"}
+var wishtwo = {a: "goodmrg",b: "goodevg" }
+var x = myObject.wishes.call(wishone)
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
